@@ -48,6 +48,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.ScoreLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.Questions.SuspendLayout();
             this.MainMenu.SuspendLayout();
             this.QuizSummary.SuspendLayout();
@@ -95,7 +96,7 @@
             this.Questions.Controls.Add(this.AnswerTable);
             this.Questions.Controls.Add(this.Check);
             this.Questions.Controls.Add(this.qDescription);
-            this.Questions.Location = new System.Drawing.Point(12, 9);
+            this.Questions.Location = new System.Drawing.Point(12, 68);
             this.Questions.Name = "Questions";
             this.Questions.Size = new System.Drawing.Size(800, 450);
             this.Questions.TabIndex = 4;
@@ -272,9 +273,9 @@
             this.QuizSummary.Controls.Add(this.button1);
             this.QuizSummary.Controls.Add(this.ScoreLabel);
             this.QuizSummary.Controls.Add(this.label2);
-            this.QuizSummary.Location = new System.Drawing.Point(3, 12);
+            this.QuizSummary.Location = new System.Drawing.Point(3, 82);
             this.QuizSummary.Name = "QuizSummary";
-            this.QuizSummary.Size = new System.Drawing.Size(785, 457);
+            this.QuizSummary.Size = new System.Drawing.Size(797, 468);
             this.QuizSummary.TabIndex = 6;
             // 
             // button1
@@ -308,11 +309,24 @@
             this.label2.Text = "Quiz finished!";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Bisque;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Font = new System.Drawing.Font("WarHeliosCondCBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(622, -1);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(180, 56);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Powered by QuizApi\r\nhttps://quizapi.io/";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 471);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.QuizSummary);
             this.Controls.Add(this.Questions);
             this.Controls.Add(this.MainMenu);
@@ -323,6 +337,7 @@
             this.MainMenu.ResumeLayout(false);
             this.QuizSummary.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -348,5 +363,6 @@
         private Button button1;
         private Label ScoreLabel;
         private Label label2;
+        private Label label3;
     }
 }
